@@ -54,12 +54,13 @@ const Footer = () => {
                   <p>402 Onyx Business Center</p>
                   <p>Akshar Chowk, Muj Mahuda</p>
                   <p>Vadodara, Gujarat, India</p>
+                  <p>390012</p>
                 </div>
               </div>
               <div className="flex items-center space-x-2">
                 <Phone className="h-5 w-5 text-[#F45B2A]" />
                 <div>
-                  <p>+91 2654000744</p>
+                  <p>+91 265-4000744</p>
                   <p>+91 9825094090</p>
                 </div>
               </div>

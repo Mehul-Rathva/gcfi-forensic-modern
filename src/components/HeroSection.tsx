@@ -82,40 +82,7 @@ const HeroSection = () => {
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8 sm:mt-12 animate-fade-in px-4" style={{ animationDelay: '0.8s' }}>
-              <Button 
-                size="lg" 
-                className="bg-gradient-to-r from-[#F45B2A] to-[#FF7A4D] hover:from-[#F45B2A]/90 hover:to-[#FF7A4D]/90 text-white px-6 sm:px-8 md:px-10 py-3 sm:py-4 text-base sm:text-lg font-semibold transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl rounded-xl w-full sm:w-auto"
-                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-              >
-                Start Investigation
-                <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
-              </Button>
-              <Button 
-                variant="outline" 
-                size="lg" 
-                className="border-2 border-[#F45B2A] text-[#F45B2A] hover:bg-[#F45B2A] hover:text-white px-6 sm:px-8 md:px-10 py-3 sm:py-4 text-base sm:text-lg font-semibold transform hover:scale-105 transition-all duration-300 rounded-xl glass-card w-full sm:w-auto"
-                onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
-              >
-                Our Services
-              </Button>
-            </div>
-
-            {/* Trust Indicators */}
-            <div className="mt-12 sm:mt-16 pt-6 sm:pt-8 border-t border-[#F45B2A]/20">
-              <p className="text-xs sm:text-sm text-[#6E6E6E] mb-4 font-medium">Trusted by leading organizations</p>
-              <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6 md:gap-8 opacity-60">
-                <div className="px-3 sm:px-4 py-2 glass-card rounded-lg border border-[#F45B2A]/10">
-                  <span className="text-[#2B2B2B] font-semibold text-sm">ISO 27001</span>
-                </div>
-                <div className="px-3 sm:px-4 py-2 glass-card rounded-lg border border-[#F45B2A]/10">
-                  <span className="text-[#2B2B2B] font-semibold text-sm">CERT-IN</span>
-                </div>
-                <div className="px-3 sm:px-4 py-2 glass-card rounded-lg border border-[#F45B2A]/10">
-                  <span className="text-[#2B2B2B] font-semibold text-sm">Gujarat Police</span>
-                </div>
-              </div>
-            </div>
+            {/* Removed 'Our Services' button */}
           </div>
         </div>
       </div>

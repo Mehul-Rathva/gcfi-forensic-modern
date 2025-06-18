@@ -49,13 +49,13 @@ const ContactSection = () => {
     {
       icon: Building2,
       title: 'Address',
-      details: ['402 Onyx Business Center', 'Akshar Chowk, Muj Mahuda', 'Vadodara, Gujarat, India'],
+      details: ['402 Onyx Business Center', 'Akshar Chowk, Muj Mahuda', 'Vadodara, Gujarat, India','390012'],
       color: 'bg-[#F45B2A]'
     },
     {
       icon: Phone,
       title: 'Phone',
-      details: ['+91 2654000744', '+91 9825094090'],
+      details: ['+91 265-4000744', '+91 9825094090'],
       color: 'bg-[#F45B2A]'
     },
     {
