@@ -19,6 +19,7 @@ const Navbar = () => {
     { label: 'Services', href: '#services' },
     { label: 'Certifications', href: '#certifications' },
     { label: 'Contact', href: '#contact' },
+    { label: 'CyberToolkit', href: 'https://osint-toolkit-central-main.vercel.app/', external: true },
   ];
 
   return (
@@ -46,14 +47,27 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
             {navItems.map((item) => (
-              <a
-                key={item.label}
-                href={item.href}
-                className="relative font-medium transition-all duration-300 hover:scale-105 group text-[#2B2B2B] hover:text-[#F45B2A]"
-              >
-                {item.label}
-                <span className="absolute inset-x-0 bottom-0 h-0.5 bg-gradient-to-r from-[#F45B2A] to-[#FF7A4D] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
-              </a>
+              item.external ? (
+                <a
+                  key={item.label}
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="relative font-medium transition-all duration-300 hover:scale-105 group text-[#2B2B2B] hover:text-[#F45B2A]"
+                >
+                  {item.label}
+                  <span className="absolute inset-x-0 bottom-0 h-0.5 bg-gradient-to-r from-[#F45B2A] to-[#FF7A4D] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+                </a>
+              ) : (
+                <a
+                  key={item.label}
+                  href={item.href}
+                  className="relative font-medium transition-all duration-300 hover:scale-105 group text-[#2B2B2B] hover:text-[#F45B2A]"
+                >
+                  {item.label}
+                  <span className="absolute inset-x-0 bottom-0 h-0.5 bg-gradient-to-r from-[#F45B2A] to-[#FF7A4D] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+                </a>
+              )
             ))}
           </div>
 
@@ -73,14 +87,27 @@ const Navbar = () => {
           <div className="md:hidden glass-card border-t border-[#F45B2A]/20 animate-fade-in">
             <div className="px-2 pt-2 pb-3 space-y-1">
               {navItems.map((item) => (
-                <a
-                  key={item.label}
-                  href={item.href}
-                  className="block px-4 py-3 text-[#2B2B2B] hover:text-[#F45B2A] hover:bg-[#F45B2A]/10 transition-all duration-300 rounded-lg font-medium"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {item.label}
-                </a>
+                item.external ? (
+                  <a
+                    key={item.label}
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block px-4 py-3 text-[#2B2B2B] hover:text-[#F45B2A] hover:bg-[#F45B2A]/10 transition-all duration-300 rounded-lg font-medium"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {item.label}
+                  </a>
+                ) : (
+                  <a
+                    key={item.label}
+                    href={item.href}
+                    className="block px-4 py-3 text-[#2B2B2B] hover:text-[#F45B2A] hover:bg-[#F45B2A]/10 transition-all duration-300 rounded-lg font-medium"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {item.label}
+                  </a>
+                )
               ))}
             </div>
           </div>
